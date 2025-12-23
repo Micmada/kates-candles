@@ -1,0 +1,22 @@
+<svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1.45"
+     stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Flame outer -->
+  <path d="M12 3.2c2.2 2.8 3.2 4.8 3.2 7.2a3.2 3.2 0 1 1-6.4 0c0-2.4 1-4.4 3.2-7.2z"/>
+
+  <!-- Flame inner -->
+  <path d="M12 7.5c1 1.3 1.4 2.3 1.4 3.4a1.4 1.4 0 1 1-2.8 0c0-1.1.4-2.1 1.4-3.4z"/>
+
+  <!-- Wick -->
+  <path d="M12 11.8v1.1"/>
+
+  <!-- Candle rim -->
+  <path d="M8.5 13.2h7"/>
+
+  <!-- Candle body -->
+  <path d="M8.2 13.2v5.8a2.5 2.5 0 0 0 2.5 2.5h2.6a2.5 2.5 0 0 0 2.5-2.5v-5.8"/>
+
+  <!-- Candle base -->
+  <path d="M9.5 21.5h5"/>
+</svg>
