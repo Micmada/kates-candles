@@ -27,7 +27,7 @@ function CheckoutPage() {
     }
 
     // Create PaymentIntent as soon as the page loads
-    fetch('http://pprhxpttpm.us-east-1.awsapprunner.com/api/orders/create-payment-intent', {
+    fetch('https://pprhxpttpm.us-east-1.awsapprunner.com/api/orders/create-payment-intent', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -57,7 +57,7 @@ function CheckoutPage() {
         })),
       };
 
-      const response = await fetch('http://pprhxpttpm.us-east-1.awsapprunner.com/api/orders', {
+      const response = await fetch('https://pprhxpttpm.us-east-1.awsapprunner.com/api/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(orderData),

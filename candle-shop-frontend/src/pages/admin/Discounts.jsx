@@ -19,7 +19,7 @@ function Discounts() {
 
   const loadDiscounts = async () => {
     try {
-      const response = await fetch('http://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts');
+      const response = await fetch('https://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts');
       const data = await response.json();
       setDiscounts(data);
       setLoading(false);
@@ -33,8 +33,8 @@ function Discounts() {
     e.preventDefault();
     
     const url = editingDiscount 
-      ? `http://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts/${editingDiscount.id}`
-      : 'http://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts';
+      ? `https://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts/${editingDiscount.id}`
+      : 'https://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts';
     
     const method = editingDiscount ? 'PUT' : 'POST';
     
@@ -84,7 +84,7 @@ function Discounts() {
     if (!confirm('Are you sure you want to delete this discount code?')) return;
 
     try {
-      const response = await fetch(`http://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts/${id}`, {
+      const response = await fetch(`https://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts/${id}`, {
         method: 'DELETE',
       });
 
@@ -100,7 +100,7 @@ function Discounts() {
 
   const toggleActive = async (discount) => {
     try {
-      const response = await fetch(`http://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts/${discount.id}`, {
+      const response = await fetch(`https://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts/${discount.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

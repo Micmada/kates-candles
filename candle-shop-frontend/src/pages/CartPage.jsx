@@ -27,7 +27,7 @@ function CartPage() {
     setDiscountError('');
     
     try {
-      const response = await fetch('http://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts/validate', {
+      const response = await fetch('https://pprhxpttpm.us-east-1.awsapprunner.com/api/discounts/validate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ code: discountCode }),
